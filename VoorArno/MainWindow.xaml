@@ -1,0 +1,21 @@
+﻿<Window x:Class="VoorArno.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VoorArno"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">Input:</Label>
+            <TextBox x:Name="TxtInput" Grid.Column="1" KeyDown="PressedEnter"></TextBox>
+        </Grid>
+        <Button x:Name="BtnGuess" Click="BtnGuess_Click">Guess name</Button>
+        <Button x:Name="BtnWindow" Click="BtnWindow_Click">Show new window</Button>
+    </StackPanel>
+</Window>
